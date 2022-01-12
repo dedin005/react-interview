@@ -2,17 +2,20 @@ import './App.css';
 import TopBar from './topbar.js';
 import Data from './data.js'
 import Profile from './profile.js';
+import { Container } from 'react-bootstrap';
 
 function App() {
   return (
     <div className="App">
-      <div className="header">
+      <Container>
         <TopBar />
-      </div>
+      </Container>
       
       <body className='content'>
-        <Profile />
-        <Data />
+        <Container>
+          <Profile />
+          <Data />
+        </Container>
       </body>
     </div>
   );

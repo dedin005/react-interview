@@ -1,6 +1,10 @@
 .header-row {
     position: sticky;
 }
+.header {
+    display: inline-flex;
+    padding: 2px;
+}
 .site-name {
     text-align: left;
 }
@@ -10,13 +14,13 @@
 }
 
 .img-logo-header {
-    color: black;
+    color: rgb(107, 161, 223);
 }
 
 
 .img-src {
-    width: 200px;
-    height: 50px;
+    width: 29px;
+    height: 29px;
     display: inherit;
 }
 
@@ -31,12 +35,9 @@
 }
 
 
-.practices {
-    text-align: center;
-}
-
 .practices-parent {
-    display: inline-block;
+    text-align: center;
+    display: inline-flex;
 }
 
 .practices-elements {
@@ -58,16 +59,30 @@
 
 .user-details {
     text-align: right;
+    color: rgb(39, 36, 170);
 }
 
 .user-details-parent {
-    display: inline-block;
+    display: inherit;
+    flex-direction: row;
 }
 
 .user-details-icons {
-    text-align: right;
-}
-.user-details-heart {
-    text-align: right;
+    display: inherit;
 }
 
+.heart {
+    display: inherit;
+}
+
+.bell {
+    display: inherit;
+}
+
+.person {
+    display: inherit;
+}
+
+.user-details-dropdown {
+    display: inherit;
+}
