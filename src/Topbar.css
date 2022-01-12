@@ -5,16 +5,23 @@
     text-align: left;
 }
 
-.practices {
-    text-align: center;
-}
 .img-logo {
-
     display: inline-block;
 }
 
 .img-logo-header {
     color: black;
+}
+
+
+.img-src {
+    width: 200px;
+    height: 50px;
+    display: inherit;
+}
+
+.header-name {
+    display: inherit;
 }
 
 .header-logo {
@@ -23,12 +30,44 @@
     display: inherit;
 }
 
-.img-src {
-    width: 200px;
-    height: 100px;
+
+.practices {
+    text-align: center;
+}
+
+.practices-parent {
+    display: inline-block;
+}
+
+.practices-elements {
+    display: inline-block;
+}
+
+.practices-header {
+    color: rgb(46, 141, 96);
     display: inherit;
 }
 
-.header-name {
+.practices-dropdown {
     display: inherit;
 }
+
+.header-dropdown {
+    display: inherit;
+}
+
+.user-details {
+    text-align: right;
+}
+
+.user-details-parent {
+    display: inline-block;
+}
+
+.user-details-icons {
+    text-align: right;
+}
+.user-details-heart {
+    text-align: right;
+}
+
