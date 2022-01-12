@@ -1,0 +1,34 @@
+.header-row {
+    position: sticky;
+}
+.site-name {
+    text-align: left;
+}
+
+.practices {
+    text-align: center;
+}
+.img-logo {
+
+    display: inline-block;
+}
+
+.img-logo-header {
+    color: black;
+}
+
+.header-logo {
+    width: 10;
+    height: 10;
+    display: inherit;
+}
+
+.img-src {
+    width: 200px;
+    height: 100px;
+    display: inherit;
+}
+
+.header-name {
+    display: inherit;
+}
