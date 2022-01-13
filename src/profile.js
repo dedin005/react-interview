@@ -1,6 +1,5 @@
 import "./Profile.css"
 import React from "react";
-import { Col, Row } from "react-bootstrap";
 import ListIcon from '@mui/icons-material/List';
 import IconButton from '@material-ui/core/IconButton';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
@@ -21,16 +20,16 @@ export default function Profile() {
             </div>
             <div className="right-col">
                 <div className="row updated">
-                    <CheckCircleOutlineIcon className="offset" />
+                    <CheckCircleOutlineIcon className="checkmark"/>
                     <h4 className="mx-1 offset">Last updated 1/12/22</h4>
                     <IconButton>
-                        <ReplayIcon />
+                        <ReplayIcon className="refresh"/>
                     </IconButton>
                 </div>
-                <div className="row settings">
+                <div className="d-inline row settings">
                     <text>Time Range in: </text>
                     <Dropdown className="d-inline mx-2">
-                        <Dropdown.Toggle id="dropdown-autoclose-true" variant="secondary">
+                        <Dropdown.Toggle id="dropdown-autoclose-true" variant="outline-secondary">
                             Months
                         </Dropdown.Toggle>
                         <Dropdown.Menu>
@@ -41,7 +40,7 @@ export default function Profile() {
                     </Dropdown>
                     <text>Total Months</text>
                     <Dropdown className="d-inline mx-2">
-                        <Dropdown.Toggle id="dropdown-autoclose-true" variant="secondary">
+                        <Dropdown.Toggle id="dropdown-autoclose-true" variant="outline-secondary">
                             24
                         </Dropdown.Toggle>
                         <Dropdown.Menu>
@@ -51,7 +50,7 @@ export default function Profile() {
                         </Dropdown.Menu>
                     </Dropdown>
                     <text>Starting from: 01/01/2021</text>
-                    <IconButton>
+                    <IconButton className="d-inline calendar">
                         <CalendarTodayIcon />                        
                     </IconButton>
                 </div>

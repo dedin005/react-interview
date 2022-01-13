@@ -70,10 +70,6 @@
     flex-direction: row;
 }
 
-.user-details-icons {
-    display: inherit;
-}
-
 .heart {
     display: inherit;
 }

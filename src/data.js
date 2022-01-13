@@ -1,6 +1,6 @@
 import "./Data.css"
 import React from "react";
-import { ScatterChart, CartesianGrid, ZAxis, XAxis, YAxis, Scatter, Tooltip, Legend, Label } from "recharts";
+import { ScatterChart, CartesianGrid, ZAxis, XAxis, YAxis, Scatter, Tooltip, Legend, ResponsiveContainer } from "recharts";
 import DropdownButton from 'react-bootstrap/DropdownButton';
 
 export default function Data() {
@@ -53,26 +53,28 @@ export default function Data() {
     }
     return (
         <div className="row">
-            <div className="col- axis-label">
+            <div className="axis-label">
                 <h4 className="label-name">Patients Seen</h4>
             </div>
-            <div className="col-4 graph-ui">
+            <div className="col-7 graph-ui">
                 <div className="row">
-                    <DropdownButton className="mx-3" title="Adjusted Production" />
-                    <h4 className="bold">To</h4>
-                    <DropdownButton className="mx-3" title="Patients Seen" />
+                    <DropdownButton className="mx-3" title="Adjusted Production" variant="outline-secondary"/>
+                    <h4 className="bold">vs.</h4>
+                    <DropdownButton className="mx-3" title="Patients Seen" variant="outline-secondary"/>
                 </div>
                 <div className="row my-50 graph">
-                    <ScatterChart width={1100} height={700}
-                        margin={{ top: 20, right: 20, bottom: 10, left: 10 }}>
-                        <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="x" name="Adjusted Production" unit="M" type="number" tickCount="10" ticks={xticks} range={[0, 6]} tickFormatter={(value) => tickFormatter(value)} />
-                        <YAxis dataKey="y" name="Patients Seen" unit="" type="number" tickCount="8" ticks={yticks} range={[0, 3500]} />
-                        <ZAxis dataKey="z" name="Office Name" />
-                        <Tooltip cursor={{ strokeDasharray: '3 3' }} formatter={(value) => labelFormatter(value)} />
-                        <Legend />
-                        <Scatter name="" data={data} fill="#3a6486" />
-                    </ScatterChart>
+                    <ResponsiveContainer width="100%" aspect={1.5}>
+                        <ScatterChart
+                            margin={{ top: 20, right: 20, bottom: 10, left: 10 }}>
+                            <CartesianGrid strokeDasharray="3 3" />
+                            <XAxis dataKey="x" name="Adjusted Production" unit="M" type="number" tickCount="10" ticks={xticks} range={[0, 6]} tickFormatter={(value) => tickFormatter(value)} />
+                            <YAxis dataKey="y" name="Patients Seen" unit="" type="number" tickCount="8" ticks={yticks} range={[0, 3500]} />
+                            <ZAxis dataKey="z" name="Office Name" />
+                            <Tooltip cursor={{ strokeDasharray: '3 3' }} formatter={(value) => labelFormatter(value)} />
+                            <Legend />
+                            <Scatter name="" data={data} fill="#3a6486" />
+                        </ScatterChart>
+                    </ResponsiveContainer>
                 </div>
                 <div className="row">
                     <h4 className="x-label">Adjusted Production</h4>
@@ -83,8 +85,7 @@ export default function Data() {
                     <span className="col-4 left">Affinity Dental</span>
                 </div>
                 <div id="gray" className="row">
-                    <span className="col-4 left">234, Steven Creek San Jose CA, 95182</span>
-                    <br />
+                    <span id="nowrap" className="col-4 left">234, Steven Creek San Jose CA, 95182</span>
                     <br />
                     <br />
                 </div>
@@ -127,7 +128,7 @@ export default function Data() {
                 <div id="gray" className="row">
                     <span className="col-4 left">Dentists</span>
                     <span className="col-4 middle" style={{ textAlign: "left" }}>Speciality</span>
-                    <span className="col-4 npi">NPI</span>
+                    <span className="col-4 right">NPI</span>
                 </div>
                 <div id="black" className="row">
                     <span className="col-4 left">Dr. Ryan Smith</span>
@@ -156,7 +157,7 @@ export default function Data() {
                     <br />
                 </div>
                 <div id="gray" className="row">
-                    <span className="col-4 left">Practice Management Software</span>
+                    <span id="nowrap" className="col-4 left">Practice Management Software</span>
                     <span className="col-4 middle"></span>
                     <span className="col-4 right">Finance Software</span>
                 </div>

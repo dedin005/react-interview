@@ -8,6 +8,10 @@
     color: black;
 }
 
+#nowrap {
+    white-space: nowrap;
+}
+
 .row {
     margin-top: 5px;
     z-index: 1;
@@ -17,13 +21,18 @@
     font-weight: bold;
 }
 .x-label {
-    margin-top: -40px;
+    margin-top: -36px;
+    white-space: nowrap;
     margin-left: 560px;
     font-size: 19px;
     color: gray;
 }
+.axis-label {
+    width: 5%;
+}
 .label-name {
     color: gray;
+    white-space: nowrap;
     font-size: 19px;
     transform: rotate(-90deg);
     margin-top: 300px;

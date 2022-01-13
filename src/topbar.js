@@ -11,9 +11,9 @@ export default function TopBar() {
         <div className="header">
             <div className='row header-row'>
                 <div className='col-4 site-name'>
-                    <a href="" className='img-logo'>
+                    <a href="0.0.0.0" className='img-logo'>
                         <div className='header-logo'>
-                            <img className='img-src mr-1' style={{verticalAlign: "baseline"}} src="https://sikka.ai/Tickers/image/SikkaLogo29x29.png" />
+                            <img className='img-src mr-1' alt="" style={{verticalAlign: "baseline"}} src="https://sikka.ai/Tickers/image/SikkaLogo29x29.png"></img>
                         </div>
                         <div className="header-name">
                             <h1 className="img-logo-header">Practice Optimizer</h1>
@@ -26,7 +26,7 @@ export default function TopBar() {
                             <h3 className='practices-header'>Practice(s)&nbsp;</h3>
                         </div>
                         <div className='practices-dropdown'>
-                            <DropdownButton className="header-dropdown" title="1: Your Dental Practice" />
+                            <DropdownButton className="header-dropdown" title="1: Your Dental Practice" variant="outline-primary"/>
                         </div>
                     </div>
                 </div>
@@ -48,7 +48,7 @@ export default function TopBar() {
                             </IconButton>
                         </div>
                         <div className='d-inline mx-11 user-details-dropdown'>
-                            <DropdownButton className="header-dropdown" title="Your Dental Practice" />
+                            <DropdownButton className="header-dropdown" title="Your Dental Practice" variant="outline-primary"/>
                         </div>
                     </div>
 

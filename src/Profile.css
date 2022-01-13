@@ -9,7 +9,7 @@
 }
 
 .offset {
-    margin-top: 12px;
+    margin-top: 7px;
 }
 
 .left-column {
@@ -17,7 +17,9 @@
 }
 
 .updated {
+    display: flex;
     justify-content: end;
+    align-items: center;
 }
 
 .right-col {
