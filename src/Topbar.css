@@ -1,9 +1,12 @@
 .header-row {
     position: sticky;
+    width: 100%;
+    margin: 0;
 }
 .header {
     display: inline-flex;
     padding: 2px;
+    width: 100%;
 }
 .site-name {
     text-align: left;
@@ -45,7 +48,7 @@
 }
 
 .practices-header {
-    color: rgb(46, 141, 96);
+    color: black;
     display: inherit;
 }
 

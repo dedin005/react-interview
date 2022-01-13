@@ -1,0 +1,34 @@
+.profile {
+    width: 100%;
+}
+.profile-title {
+    color: black;
+    font-weight: normal;
+    padding-top: 16px;
+    display: inherit;
+}
+
+.offset {
+    margin-top: 12px;
+}
+
+.left-column {
+    display: inline-block;
+}
+
+.updated {
+    justify-content: end;
+}
+
+.right-col {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.settings {
+    font-size: 19px;
+}
+
+.settings text {
+    padding-top: 5px;
+}

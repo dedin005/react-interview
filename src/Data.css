@@ -1,0 +1,52 @@
+#gray {
+    color: gray;
+    font-size: 14px;
+}
+
+#black {
+    font-size: 19px;
+    color: black;
+}
+
+.row {
+    margin-top: 5px;
+    z-index: 1;
+    background-color: inherit;
+}
+.bold {
+    font-weight: bold;
+}
+.x-label {
+    margin-top: -40px;
+    margin-left: 560px;
+    font-size: 19px;
+    color: gray;
+}
+.label-name {
+    color: gray;
+    font-size: 19px;
+    transform: rotate(-90deg);
+    margin-top: 300px;
+}
+.graph-ui {
+    background-color: white;
+}
+
+.info {
+    margin-left: auto;
+    margin-right: 15px;
+    width: 25%;
+    background-color: white;
+}
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.npi {
+    text-align: right;
+    font-size: 17px;
+}
