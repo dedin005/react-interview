@@ -1,5 +1,5 @@
 # A Simple Webpage Exercise
-## Given Image
+## <center>Given Image</center>
 ![The Image to Copy](image.png?raw=true)
-## Resulting Image
+## <center>Resulting Image</center>
 ![The Resulting Webpage](result.png?raw=true)
