@@ -72,7 +72,7 @@ export default function Data() {
                             <ZAxis dataKey="z" name="Office Name" />
                             <Tooltip cursor={{ strokeDasharray: '3 3' }} formatter={(value) => labelFormatter(value)} />
                             <Legend />
-                            <Scatter name="" data={data} fill="#3a6486" />
+                            <Scatter name="" data={data} fill="#3a6486"/>
                         </ScatterChart>
                     </ResponsiveContainer>
                 </div>
