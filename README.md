@@ -1,2 +1,2 @@
 # A Simple Webpage
-![[image.png]]
+![](image.png?raw=true)
